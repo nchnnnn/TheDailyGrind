@@ -326,19 +326,47 @@ footer{
   gap: 40px;
 }
 
+@keyframes hoverCycle {
+0%, 33%, 100% {
+transform: translateY(0);
+background-color: var(--cream);
+color: var(--dark);
+}
+16% {
+transform: translateY(-10px);
+background-color: var(--themecolor);
+color: white;
+}
+}
+
 .service-card {
-  background-color: var(--cream);
-  border-radius: 12px;
-  padding: 25px;
-  transition: all 0.4s ease;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+background-color: var(--cream);
+border-radius: 12px;
+padding: 25px;
+transition: all 0.4s ease;
+box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+animation: hoverCycle 6s ease-in-out infinite;
+}
+
+.service-card:nth-child(1) {
+animation-delay: 0s;
+}
+
+.service-card:nth-child(2) {
+animation-delay: 1.5s;
+}
+
+.service-card:nth-child(3) {
+animation-delay: 3s;
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
-  background-color: var(--themecolor);
-  color: white;
+transform: translateY(-10px);
+background-color: var(--themecolor);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+color: white;
 }
+
 
 .service-card img {
   width: 100%;
@@ -353,9 +381,7 @@ footer{
   transition: color 0.3s ease;
 }
 
-.service-card:hover h3 {
-  color: white;
-}
+
 
 .service-card p {
   font-size: 1.25rem;
@@ -364,8 +390,9 @@ footer{
   transition: color 0.3s ease;
 }
 
-.service-card:hover p {
-  color: white;
+/* 🟤 Pause animation when hovering over the whole container */
+.services-container:hover .service-card {
+animation: none;
 }
 
 
