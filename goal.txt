@@ -1,6 +1,5 @@
 Animation in Home Our services
 Nav link active change
 Gallery Grid style
-change price
 
 CHANGE THEME to primary theme 
