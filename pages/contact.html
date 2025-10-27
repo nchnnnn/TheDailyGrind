@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Contact</title>
 </head>
 <body>
@@ -22,52 +23,109 @@
         </div>
 
         <div class="order-btn">
-            <a href="#">Take Order</a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+     
         </div>
     </nav>
-     <main>
-        <section class="contact-section">
-            <div class="contact-header">
-                <h1>Contact Us</h1>
-                <p>We'd love to hear from you! Feel free to reach out for questions, feedback, or custom orders.</p>
+    <main class="main-contact"> 
+        <section class="contact-section"> 
+            
+            <div class="contact-container">
+                <div class="contact-header"> 
+                    <h1>Send Us a Message</h1> 
+                    <p>We’d love to hear from you — share your thoughts, feedback, or questions below!</p> 
+                </div>
+
+
+                <div class="contact-form">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname" placeholder="Enter your first name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname" placeholder="Enter your last name" required />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact">Contact Number</label>
+                            <input type="tel" id="contact" name="contact" placeholder="+63 9XX XXX XXXX" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                    <label for="message">Message / Concern / Review</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="send-btn">Send Message</button>
+                </form>
+                </div>
             </div>
 
-            <div class="contact-container">
-                <!-- Contact Form -->
-                <div class="contact-form">
-                    <form action="#" method="post">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="info-box">
+                        <div class="info-item">
+                            <div class="item-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="item">
+                                <h4 class="item-holder">Address</h4>
+                                <p>123 Coffee St., Brewtown, PH 4567</p>
+                            </div>
+                        </div>
 
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <div class="info-item">
+                            <div class="item-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="item">
+                                <h4 class="item-holder">Phone / WhatsApp</h4>
+                                <p>+63 912 345 6789</p>
+                            </div>
+                        </div>
 
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+                        <div class="info-item">
 
-                        <button type="submit" class="send-btn">Send Message</button>
-                    </form>
-                </div>
+                            <div class="item-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
 
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <h3>Visit Us</h3>
-                    <p><strong>Address:</strong> 123 Coffee Street, Brewtown, Philippines</p>
-                    <p><strong>Phone:</strong> +63 912 345 6789</p>
-                    <p><strong>Email:</strong> thedailygrind@gmail.com</p>
+                            <div class="item">
+                                <h4 class="item-holder">Email</h4>
+                                <a id="email" href="mailto:thedailygrind@brew.com">thedailygrind@brew.com</a>
 
-                    <h4>Follow Us</h4>
-                    <p>
-                        <a href="#">Facebook</a> |
-                        <a href="#">Instagram</a> |
-                        <a href="#">Telegram</a>
-                    </p>
+                            </div>
+                        </div>
 
-                    <img src="" alt="Coffee image">
-                </div>
+                    </div>
+                    <div class="working-hours">
+                        <h4>Working Hours</h4>
+                        <p><i class="fa-solid fa-clock"></i> Mon–Sun | 7:00 AM – 10:00 PM</p>
+                    </div>
+
+                    <div class="socials">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
             </div>
         </section>
-    </main>
+</main>
 
     <footer>
         <h3>© 2025 The Daily Grind | Crafted with ☕ & love</h3>
