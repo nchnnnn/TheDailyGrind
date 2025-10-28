@@ -3,8 +3,8 @@
 :root{
     /* Dark Chocolate/Caramel Theme */
     --themecolor: #d4a574;
-    --light-cream: #3d2817;
-    --cream: #2a1810;
+    --light-cream: #564231;
+    --cream: #5f3a29;
     
     --caramel: #e8b86d;
     --chocolate: #6f4e37;
@@ -288,7 +288,7 @@ footer{
 }
 
 .services-section {
-  background-color: var(--cream);
+  background-color: var(--dark-chocolate);
   color: var(--light-text);
   padding: 50px 0;
 }
@@ -331,10 +331,13 @@ footer{
     transform: translateY(0);
     background-color: var(--light-cream);
     color: var(--light-text);
+    box-shadow: var(--caramel-shadow);
+
   }
   16% {
     transform: translateY(-10px);
     background-color: var(--dark-chocolate);
+    box-shadow: var(--caramel-shadow);
     color: var(--caramel);
   }
 }
@@ -819,7 +822,7 @@ footer{
 /* ABOUT PAGE STYLES */ 
 
 #about {
-  background-color: var(--cream);
+  background-color: var(--dark);
   color: var(--light-text);
   padding: 60px 0;
 }
@@ -845,15 +848,17 @@ footer{
 
 .subtitle-container{
   padding: 20px 20px;
-  background-color: var(--cream);
+  background-color: var(--coffee);
   height: 100%;
+  background-color: var(--light-cream);
+
 }
 
 .section-subtitle {
   font-size: 1.8em;
   margin-top: 30px;
   margin-bottom: 20px;
-  color: var(--coffee);
+  color: var(--caramel);
 }
 
 .story-content {
@@ -879,6 +884,7 @@ footer{
 
 .story-text {
   flex: 2;
+  font-size: 1.3rem;
   line-height: 1.6;
   color: var(--light-text);
   font-family: var(--font-nunito);
@@ -895,7 +901,7 @@ footer{
 }
 
 .philosophy-list li {
-  background-color: var(--light-cream);
+  background-color: var(--dark-chocolate);
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 8px;
@@ -907,7 +913,7 @@ footer{
 }
 
 .philosophy-list li:hover{
-  background-color: var(--dark-chocolate);
+  background-color: var(--cream);
   transform: translateX(0px);
   box-shadow: var(--caramel-shadow);
 }
@@ -918,7 +924,7 @@ footer{
 
 .call-to-action {
   text-align: center;
-  padding: 2px 0;
+  
 }
 
 .call-to-action h3 {
@@ -976,12 +982,13 @@ hr {
   text-align: center;
 }
 
-.contact-header h1 {
+.contact-header h2 {
+
   color: var(--caramel);
-  font-family: var(--font-varela);
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: var(--font-merriweather);
 }
+
 
 .contact-header p {
   color: var(--light-text);
